@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <form action="/processar_dados.php" method="post"><!-- A tag Form faz com que todos os elementos dentro dele fiquem agrupados em um campo/ action define o destino do formulario apos ele ser submetido/ method post faz com que voce saiba que esta enviando conteudo sensivel como a senha da pessoa-->
+        <p>Nome</p><input type="text" name="nome" id="nome"><!-- nessa linha vai criar um campo onde a pessoa como escrever qualquer coisa livremente -->
+        <p>Senha</p><input type="password" name="senha" id="senha"><!-- aqui vai criar um campo onde o usuario colocara uma senha -->
+        <p>E-mail</p><input type="email" name="email" id="email"><!-- aqui e um campo para inserir o email-->
+        <p>Idade</p><input type="number" name="idade" id="idade" min="1" max="100"><!-- aqui temos que irformar a nossa idade-->
+        <p>Arquivo</p><input type="file" name="arquivo" id="arquivo"><!-- neste campo voce vai inserir algum arquivo que deseja enviar para a pessoa-->
+        <input type="submit" value="Enviar"><!-- aqui vamos enviar o nosso arquivo-->
+        <input type="reset" value="Limpar"><!-- serve para limpar todas as informacoes -->
+    </form>
+</body>
+</html>
